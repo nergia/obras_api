@@ -19,3 +19,6 @@ Route::get('contacts',
 
 Route::post('save_contact', 
 [App\Http\Controllers\ContactController::class,'saveContact']);
+
+Route::delete('delete_contact/{id}',           
+[App\Http\Controllers\ContactController::class,'deleteContact']);
