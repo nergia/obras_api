@@ -16,6 +16,13 @@ class ContactController extends Controller
                 ]
             );
     }
+
+    public function getContact($id){
+        $contact = Contact::find($id);
+        return response()->json($contact);
+    }
+
+
     public function saveContact(Request $request){
         $contact = new Contact();
         $contact->name = $request->name;
