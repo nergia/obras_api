@@ -25,3 +25,6 @@ Route::delete('delete_contact/{id}',
 
 Route::get('get_contact/{id}',           
 [App\Http\Controllers\ContactController::class,'getContact']);
+
+Route::post('update_contact/{id}',
+[App\Http\Controllers\ContactController::class,'updateContact']);
